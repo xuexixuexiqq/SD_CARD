@@ -1,0 +1,5 @@
+projects:
+  sd_card:
+  - project.yaml
+settings:
+  export_dir: .
