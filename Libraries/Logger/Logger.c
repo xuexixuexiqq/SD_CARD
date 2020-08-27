@@ -30,7 +30,7 @@ uint8_t WriteBlock(const void *pBuffer, uint16_t size)
     return 1;
 
   /* Open file to write */
-  if(f_open(&fil, "log.bin", FA_OPEN_APPEND | FA_WRITE) != FR_OK)
+  if(f_open(&fil, "log.bin", FA_OPEN_ALWAYS | FA_WRITE) != FR_OK)
     return 2;
 
   /* Check freeSpace space */
